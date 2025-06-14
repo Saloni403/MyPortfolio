@@ -140,7 +140,15 @@ nav a:hover {
     background: linear-gradient(to right, #17abd8, #c21d67);
     border-color: #fff;
 }
-
+.resumefile{
+    border: 2px solid White;
+    border-radius: 5px;
+    color: #fff;
+}
+.resumefile:hover{
+ background: linear-gradient(to right, #17abd8, #c21d67);
+    border-color: #fff;
+}
 
 .hero-img {
     width: 25vmax;
