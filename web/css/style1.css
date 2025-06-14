@@ -10,7 +10,9 @@ ul {
     padding-left: 0 !important;
 
 }
-
+a{
+    text-decoration: none !important;
+}
 
 body {
     background-image: url(https://wallpaperaccess.com/full/1491559.jpg);
@@ -56,6 +58,11 @@ section {
 }
 
 /* header */
+ header{
+      position: sticky;
+      top: 0;
+z-index: 99;
+    }
 nav {
     display: flex;
     justify-content: center;
@@ -76,6 +83,7 @@ nav a {
     text-decoration: none;
     font-weight: bold;
     padding: 8px;
+    border: none;
 }
 
 nav a:hover {
@@ -96,7 +104,11 @@ nav a:hover {
     padding: 4rem 1rem;
     position: relative;
     text-align: center;
-    background-color: rgba(0, 0, 0,0.3);
+  background-image: url(https://wallpaperaccess.com/full/1491559.jpg);
+  background-size: cover;
+  background-position: center;
+ 
+    /* background-color: rgba(0, 0, 0,0.3); */
     /* backdrop-filter: blur(10px); */
 }
 
@@ -117,10 +129,16 @@ nav a:hover {
     font-size: 1.5rem;
     margin-top: 1rem;
     padding: 0.25rem 0.5rem;
+    
+}
+.btndesign:hover{
+    background: linear-gradient(to right, #17abd8, #c21d67);
+    border-color: #fff;
 }
 
+
 .hero-img {
-    width: 300px;
+    width: 30vmax;
     margin-top: 2rem;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
@@ -137,8 +155,23 @@ nav a:hover {
 }
 
 
-
-
+/* contact */
+#contact{
+    background-color: rgba(0, 0, 0,0.3);
+    backdrop-filter: blur(10px);
+    margin-top: 3rem;
+    color: #fff;
+    font-size: 1.5rem;
+}
+.contact-info {
+    display: flex;
+flex-direction: column;
+width: max-content;
+margin: 0 auto !important;
+} 
+.contact-info a{
+     color: #fff;
+}
 
 @media(max-width:576px) {
     h5 {
@@ -149,6 +182,12 @@ nav a:hover {
     }
     nav ul {
         gap: 0 !important;
+    }
+    nav a {
+        font-size: 0.75rem;
+    }
+    #contact{
+      font-size: 1rem;  
     }
 }
 
