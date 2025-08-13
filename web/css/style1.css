@@ -87,6 +87,7 @@ nav a {
     font-weight: bold;
     padding: 8px;
     border: none;
+    transition: 0.3s;
 }
 
 nav a:hover {
@@ -115,6 +116,17 @@ nav a:hover {
     /* background-color: rgba(0, 0, 0,0.3); */
     /* backdrop-filter: blur(10px); */
 }
+.image-container img{
+    background-color: #aa3b6b;
+     border: 2px solid white; 
+      border-radius: 30px;
+      transition: 0.3s;
+}
+.image-container img:hover{
+  
+       box-shadow: 5px 5px 20px white;
+}
+
 
 .hero-text h1 {
     font-size: 3rem;
@@ -131,9 +143,9 @@ nav a:hover {
     border-radius: 5px;
     color: #fff;
     font-size: 1.5rem;
-    margin-top: 1rem;
+    margin: 1rem 0;
     padding: 0.25rem 0.5rem;
-
+transition:all 0.3s ease 0s;
 }
 
 .btndesign:hover {
@@ -152,9 +164,9 @@ nav a:hover {
 
 .hero-img {
     width: 25vmax;
-    margin-top: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    /* margin-top: 2rem; */
+    /* border-radius: 10px; */
+    /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); */
 
 }
 
@@ -174,7 +186,7 @@ nav a:hover {
     backdrop-filter: blur(10px);
     margin-top: 3rem;
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
 }
 
 .contact-info {
@@ -183,10 +195,20 @@ nav a:hover {
     width: max-content;
     margin: 0 auto !important;
 }
-
 .contact-info a {
     color: #fff;
+    margin-bottom: 1rem;
 }
+.contact-info a i{
+    transition: 0.3s;
+    margin-right: 5px;
+}
+.contact-info a:hover i{
+color: #f72585;
+transform: scale(1.2) translateY(-2px);
+}
+
+
 
 @media(max-width:576px) {
     h5 {
@@ -208,6 +230,10 @@ nav a:hover {
     #contact {
         font-size: 1rem;
     }
+    .text-start h5{
+    font-size: 1rem;
+    font-weight: 600;
+}
 }
 
 @media(max-width:768px) {
@@ -216,9 +242,9 @@ nav a:hover {
         padding: 1.5rem 0.5rem;
     }
 
-    .hero-img {
+    /* .hero-img {
         border-radius: 60%;
-    }
+    } */
 }
 
 
